@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Mark Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Mark</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#home">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#about">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#skills">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#services">Services</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#contact">Contact Us</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact Us</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <!--<section id="home">
+        <div class="main-container">
+            <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                <img id="myImage" src="image.png" alt="Mark's Portfolio Image">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">
+                    Hey I'm <span> Mark</span>
+                </h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">
+                    I'm a <span class="typewriter-text"></span>
+                </div>
+                <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">
+                    I Am a fresh graduate with 
+                </p>
+                <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                    <button aria-label="Download Mark's CV">Download CV</button>
+                </div>
+            </div>
+        </div>
+    </section>-->
+    
+    <section class="main">
+        <div class="content">
+            <div class="main-details">
+                <div class="left" data-aos="zoom-in-right" data-aos-duration="2500">
+                    <img src="image.png" alt="Mark's Image" />
+                </div>
+                <div class="right">
+                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">
+                        Hey I'm <span> Mark</span>
+                    </h1>
+                    <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">
+                        I'm a <span class="typewriter-text"></span>
+                    </div>
+                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, perferendis quas
+                        consectetur possimus maxime consequatur cupiditate eos dolorum molestias praesentium
+                        error exercitationem rem labore illo, in dolor, odio corporis excepturi?
+                    </p>
+                    <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                    <button aria-label="Download Mark's CV" onclick="downloadFile('cv.pdf', 'mark_jezreel_wagas_cv')">Download CV</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({offset:0});
+        </script>
+        <script>
+            function hamburg(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(0px)"
+            }
+            function cancel(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(-500px)"
+            }
+        </script>
+    <section id="about" class="about">
+        <div class="content">
+            <div class="title"><span>About Me</span></div>
+            <div class="about-details">
+                <div class="left">
+                    <img src="image.png" alt="Mark's Image" />
+                </div>
+                <div class="right">
+                    <div class="topic">Designing is my passion</div>
+                    <p>
+                        I am a highly adaptable and efficient virtual assistant, dedicated to helping you stay organized, productive, and stress-free. With expertise in task management, communication, research, and problem-solving, I streamline your day-to-day operations so you can focus on what matters most. My expertise extends to various tools and platforms,
+                        including GoHigh-level CRM, Tresta, Click Up, Trello, Discord, and many more. I am committed to delivering top-notch service to enhance your productivity and streamline your tasks.
+                        Feel free to let me know how I can best support you!
+                    </p>
+                <div class="button">
+                    <button aria-label="Download Mark's CV">Download CV</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="content">
+            <div class="title"><span>My skills</span></div>
+            <div class="skills-details">
+                <div class="text">
+                    <div class="topic">
+                        Skills reflect our knowledge
+                    </div>
+                    <p data-aos="fade-right">I am a highly adaptable and efficient virtual assistant, dedicated to helping you stay organized, productive, and stress-free. With expertise in task management, communication, research, and problem-solving, I streamline your day-to-day operations so you can focus on what matters most.
+
+                        My expertise extends to various tools and platforms,
+                        including GoHigh-level CRM, Tresta, Click Up, Trello, Discord, and many more. I am committed to delivering top-notch service to enhance your productivity and streamline your tasks.
+
+                        Feel free to let me know how I can best support you!</p>
+                        <div class="experience">
+                            <div class="num">10</div>
+                            <div class="exp">Years Of<br/>
+                                experience</div>
+                        </div>
+                     </div>
+                     <div class="boxes">
+                        <div class="box">
+                            <div class="topic">HTML</div>
+                            <div class="per">
+                                <div style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="topic">CSS</div>
+                            <div class="per">
+                                 <div style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="topic">JavaScript</div>
+                            <div class="per">
+                                <div style="width: 70%;"></div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="topic">PHP</div>
+                            <div class="per">
+                                 <div style="width: 60%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="services" class="Services">
+        <div class="content">
+            <div class="title"><span>My Services</span></div>
+            <div class="boxes">
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-bath"></i>
+                    </div>
+                    <div class="topic">Web Development</div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <div class="topic">Web Design</div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="topic">Digital Marketing</div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fab fa-android"></i>
+                    </div>
+                    <div class="topic">App Development</div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-camera-retro"></i>
+                    </div>
+                    <div class="topic">Photography</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="Contact">
+        <div class="content">
+            <div class="title"><span>Have Any projects?</span></div>
+            <div class="info">
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, provident!</p>
+            </div>
+            <button>Let's Chat</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="text">
+            <span>Created By
+                <a href="#">Mark|</a>&#169;2025 All Rights Reserved</span>
+        </div>
+    </footer>
+
+    <script>
+        function downloadFile(fileUrl, fileName) {
+            const link = document.createElement('a');
+            link.href = fileUrl;
+            link.download = fileName; // Specify the desired file name
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link); // Clean up the link element
+        }
+    </script>
+</body>
+</html>
