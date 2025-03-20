@@ -270,7 +270,6 @@ section.main-container {
     white-space: nowrap; 
     margin: 0 auto; 
     letter-spacing: .15em; 
-    transition: 0.3s linear;
     animation: 
       typing 3.5s steps(40, end),
       blink-caret .75s step-end infinite;
